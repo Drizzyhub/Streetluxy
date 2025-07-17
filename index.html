@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STREETLUX - Premium Streetwear</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>STREETLUX</h1>
+    <button id="toggleMode">🌙</button>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product" onclick="showDescription('Hoodie - ₦12,000\nAvailable in Black & White')">
+        <img src="https://via.placeholder.com/200x200.png?text=Hoodie" alt="Hoodie" />
+        <h2>Hoodie</h2>
+        <p class="available">Available</p>
+      </div>
+      <div class="product" onclick="showDescription('Sneakers - ₦18,500\nOut of stock currently')">
+        <img src="https://via.placeholder.com/200x200.png?text=Sneakers" alt="Sneakers" />
+        <h2>Sneakers</h2>
+        <p class="unavailable">Not Available</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:miraclewillie74@gmail.com">miraclewillie74@gmail.com</a></p>
+  </footer>
+
+  <div id="modal" class="modal" onclick="hideModal()">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
